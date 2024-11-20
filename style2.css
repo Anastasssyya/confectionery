@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    /*background-color: rgba(239, 202, 153, 0.892); */
+    background-color: rgba(239, 202, 153, 0.785);
+}
+
+
+.authentication-block
+{
+    width: 400px;
+    height: 450px;
+    margin-top: 15px;
+    background-color: rgba(33, 76, 248, 0.419);
+    backdrop-filter: blur(50px);
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+
+.authentication-form
+{
+    position: relative;
+    z-index: 1;
+    max-width: 387px;
+    padding: 40px 0 44px 0;
+    box-sizing: border-box;
+}
+
+.authentication-form-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding-left: 47%;
+    letter-spacing: 3px;
+    font-weight: 600;
+
+}
+
+.authentication-form-inputs{
+    height: 20em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 17%;
+}
+
+.authentication-form-inputs input
+{
+    border: 1px solid white;
+    margin-bottom: 16px;
+    padding: 24px 22px;
+    font-size: 18px;
+    width: 280px;
+    height: 45px;
+    background-color: transparent;
+    box-sizing: border-box;
+    outline: none;
+    color: white;   
+}
+
+::placeholder
+{
+    color: rgba(18, 15, 15, 0.43);
+}
+
+
+.authentication-form-inputs .authentication-button
+{
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    box-sizing: border-box;
+    padding-bottom: 0px;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+.authentication-form-inputs .authentication-button:hover{
+    background-color: #eeeeee;
+}
+
+.authentication-form-registration{
+    display: flex;
+    margin-top: -50px;
+    margin-left: 20px;
+    position: relative;
+    z-index: 2;
+}
+.authentication-form-registration p{
+    color: rgba(18, 15, 15, 0.574);
+
+}
+
+.authentication-form-registration > a {
+    font-size: 14px;
+    padding-left: 3px;
+}

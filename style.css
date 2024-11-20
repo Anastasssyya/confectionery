@@ -1,0 +1,843 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+html{
+    scroll-behavior: smooth;
+}
+.main
+{
+    position: relative;
+    overflow: hidden;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.logo img {
+    width: 150px; 
+    height: auto;
+}
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%; /* Шапка займёт всю ширину окна браузера */
+  height: 120px;
+  z-index: 1000;
+  background-color: rgba(75, 46, 7, 0.582);
+  transition: transform .1s linear;
+}
+
+.header.hide {
+    transform: translateY(-50px);
+}
+
+
+
+.content {
+    margin-top: 230px;
+}
+
+body {
+    /*background-color: rgba(239, 202, 153, 0.892); */
+    background-color: rgba(239, 202, 153, 0.785);
+}
+
+
+.marck-script-regular {
+    font-family: "Marck Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 60px;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.navigation {
+    margin-left: 250px;
+    margin-top: 0;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+        /*ВЫДЕЛЕНИЕ ТЕКСТА НАВИГАЦИИ*/
+.nav-item {
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 1s; /* Время эффекта */
+    text-align: center; 
+    color: aliceblue;
+}
+.nav-item:hover {
+    transform: scale(1.2);
+    color: aliceblue;
+}
+        /* КНОПКА ВХОДА*/
+ .button {
+    display: inline-block;
+    position: absolute;
+    right: 130px;
+    bottom: 20px;
+    text-decoration: none;
+    width: 100px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #524f4e;
+    background: rgb(246, 244, 241);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #6093d5;
+    color: white;
+    transform: translateY(-7px);
+  }
+
+.image-effect p{
+    display: none;
+}
+
+.content {
+    padding-top: 20px;
+
+}    
+
+.image-effect p{
+    display: none;
+}
+
+.image-effect:hover p{
+    display: block;
+    text-align: center;
+}
+
+.image-effect:hover img{
+    display: none;
+}
+.content-info {
+    max-width: 700px;
+   /* background-color: rgba(11, 75, 238, 0.347);
+    max-width: 750px;
+    height: 300px;
+    border-radius: 20px; 
+    */
+}
+
+.content-title {
+    font-family: "Marck Script", cursive;
+    font-size: 60px;
+    line-height: 100%;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.content-text {
+    max-width: 697px;
+    font-size: 22px;
+    line-height: 130%;
+    margin-bottom: 40px;
+    padding-left: 15px;
+}
+
+.image-content {
+    position: absolute;
+    top: 430px;
+    right: 70px;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px 20px 180px 20px;
+    opacity: .85;
+}
+
+
+.image-content1 {
+    position: absolute;
+    top: 170px;
+    right: 330px;
+    width: 250px;
+    height: 250px;
+    border-radius: 180px 20px 20px 20px;
+    opacity: .85;
+}
+
+.image-content2 {
+    position: absolute;
+    top: 170px;
+    right: 70px;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px 180px 20px 20px;
+    opacity: .85;
+}
+
+.image-content3 {
+    position: absolute;
+    top: 430px;
+    right: 330px;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px 20px 20px 180px;
+    opacity: .85;
+}
+
+
+.ourProduct {
+    margin-top: 0;
+    scroll-margin-top: 120px;
+}
+
+#cake{
+    scroll-margin-top: 140px;
+}
+
+#capecake{
+    scroll-margin-top: 140px;
+}
+
+#cookies{
+    scroll-margin-top: 140px;
+}
+
+#rools{
+    scroll-margin-top: 140px;
+}
+.ourProduct-info {
+    padding-top: 0px;
+    text-align: center;
+}
+
+.ourProduct-title {
+    font-family: "Marck Script", cursive;
+    font-size: 60px;
+}
+
+.ourProduct-image {
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    border-radius: 30px;
+}
+
+.common-title {
+    font-family: "Marck Script", cursive;
+    font-size: 60px;
+    text-align: center;
+}
+
+.products
+{
+    padding: 100px 0;
+    position: relative;
+}
+
+.products-items
+{
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    gap: 90px 50px;  
+    margin-top: 110px;
+}
+
+.products-item
+{
+    background-color: rgba(255, 255, 255, 0.688);
+    color: #5D3427;
+    border-radius: 7px;
+}
+
+.image-vector{
+    width: 450px;
+    height: 400px;
+    transform: rotate(45deg);
+    opacity: 0.8;
+    margin-left: -350px;
+    margin-top: -150px;
+}
+
+.image-vector1{
+    width: 450px;
+    height: 400px;
+    margin-left: 1050px;
+    margin-top: -150px;
+    transform: rotate(120deg);
+    opacity: 0.8;
+}
+.croissant-vector{
+    width: 530px;
+    height: 400px;
+    transform: rotate(200deg);
+    opacity: 0.8;
+    margin-top: 250px;
+    margin-left: 300px;
+}
+
+.products-item-image
+{
+    height: 202px;
+    text-align: center;
+
+}
+
+.products-item-image img
+{
+    height: 272px;
+    top: -55px;
+    position: relative;
+    max-width: 258px;
+    border-radius: 30px;
+}
+
+.products-item-details
+{
+    padding: 24px;
+}
+
+.products-item-title
+{
+    font-family: 'Steppe-ExtraBold', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.products-item-extra
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.products-item-price
+{
+    font-family: 'Steppe-ExtraBold', sans-serif;
+    font-size: 28px;
+    color: #5243F4;
+    margin-bottom: 10px;
+}
+
+.products-item-weight
+{
+    font-size: 18px;
+}
+.violet-button{
+    width: 178px;
+    height: 58px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 18px;
+    line-height: 45px;
+    border-radius: 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #524f4e;
+    background: rgb(246, 244, 241);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.violet-button:hover {
+    background: #6093d5;
+    color: white;
+    transform: translateY(-7px);
+  }
+
+
+  .love
+{
+    padding: 64px 0 150px 0;
+
+}
+
+.love-items
+{
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.love-item
+{
+    width: 590px;
+    height: 453px;
+}
+
+.love-item-white
+{
+    background-color: rgba(255, 255, 255, 0.688);
+    padding: 110px 80px;
+    box-sizing: border-box;
+    color: #5D3427;
+}
+
+.love-item-title
+{
+    font-family: 'Steppe-ExtraBold', sans-serif;
+    font-size: 24px;
+    line-height: 110%;
+    margin-bottom: 20px;
+}
+
+.love-item-text
+{
+    font-size: 18px;
+    line-height: 130%;
+}
+.love-image {
+    width: 600px;
+    height: 453px;
+}
+.footer {
+    background-color: rgba(75, 46, 7, 0.582);
+
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+.footer .container {
+    display: flex;
+}
+
+.logo1 > img {
+    width: 200px;
+    height: 200px;
+    
+}
+
+.contacts {
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-family: 'Steppe-ExtraBold', sans-serif;
+}
+
+#contacts-title {
+    font-family: 'Steppe-ExtraBold', sans-serif;
+    font-size: 24px;
+    color: aliceblue;
+}
+
+.list-unstyled li {
+    list-style-type: none;
+    padding-top: 15px;
+}
+
+ li p {
+    color: aliceblue;
+    cursor: pointer;
+}
+
+i{
+    color: black;
+}
+
+.rights {
+    position: relative;
+    margin-left: 100px;
+    width: 200px;
+}
+
+.rights p {
+    position: absolute;
+     bottom: 0;
+}
+
+/* КАРТОЧКА ТОВАРА */
+
+.product-image {
+    margin-top: 150px;
+    display: flex;
+    margin-bottom: 30px;
+}
+.image {
+    width: 550px;
+    height: 550px;
+    border-radius: 15px;
+}
+.card-info {
+    font-family: "Marck Script", cursive;
+    font-size: 30px;
+    width: 700px;
+    margin-top: 150px;
+    margin-left: 50px;
+}
+
+.product-card  .container {
+    display: flex;
+}
+
+.card-info  p {
+    font-family: 'Steppe-ExtraBold', sans-serif;
+    font-size: 18px;
+    padding-top: 30px;
+
+}
+
+.content1 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9e9;
+    min-width: 160px;
+    min-height: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.767);
+    z-index: 1;
+    margin-top: -35px;
+    margin-left: 105px;
+    border-radius: 20px;
+    padding-left: 20px;
+    
+}
+
+.composition {
+    position: relative;
+    display: inline-block;
+}
+
+.composition:hover .content1 {
+    display: block;
+}
+.content-li {
+    list-style-type: none;
+    font-family: 'Steppe-ExtraBold', sans-serif;
+    font-size: 16px;
+    line-height: 23px;
+    font-style: italic;
+}
+
+.clue {
+    margin-top: 15px;
+    text-decoration: none;
+    color: black;
+    width: 100px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #524f4e;
+    background: rgb(246, 244, 241);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.29);
+    transition: .3s;
+    cursor: pointer;
+    
+}
+
+.products-card-price {
+    font-family: 'Steppe-ExtraBold', sans-serif;
+    font-size: 35px;
+    color: #5243F4;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.products-card-price p {
+    font-family: 'Steppe-ExtraBold', sans-serif;
+    font-size: 12px;
+    color: #524f4e;
+    /*padding-top: 0;
+    padding-left: 50px;*/
+}
+
+.weight p {
+    font-family: 'Steppe-ExtraBold', sans-serif;
+    font-size: 14px;
+    color: #524f4e;
+    margin-top: -50px;
+    padding-left: 50px;
+}
+.nutritional-value p{
+    text-align: center;
+    font-family: "Marck Script", cursive;
+    font-size: 28px;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 40px 0;
+    margin-top: 20px;
+ }
+th {
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 1px solid grey;
+    font-family: 'Steppe-ExtraBold', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    width: 180px;
+
+}
+
+td{
+    font-size: 14px;
+    color: #3f3a38;
+    width: 180px;
+    border-right: 1px solid grey;
+    text-align: center;
+    font-family: 'Steppe-ExtraBold', sans-serif;
+    padding-top: 8px;
+}
+
+.line1 {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: calc(100% - 960px);
+    opacity: 0.2;
+    mix-blend-mode: multiply;
+}
+
+.line2
+{
+    position: absolute;
+    z-index: -1;
+    top: 100px;
+    left: 0;
+    opacity: 0.2;
+    mix-blend-mode: multiply;
+}
+
+.line3{
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    mix-blend-mode: multiply;
+    opacity: 0.2;
+}
+.card-info-item {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    border-bottom: 2px solid #5243f48a;
+}
+
+.currency
+{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    border: 1px solid #5243F4;
+    padding: 5px 10px;
+    height: 35px;
+    min-width: 35px;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 28px;
+    z-index: 1;
+    user-select: none;
+    transform: scale(1);
+    animation: pulse 2s infinite;
+    font-size: 20px;
+}
+
+@keyframes pulse
+{
+    0%
+    {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(19, 19, 215, 0.37);
+    }
+
+    70%
+    {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+
+    100%
+    {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+.button-up{
+    position: fixed;
+    left: 50px;
+    bottom: 50px;
+    border: 1px solid #5243F4;
+    padding: 5px 10px;
+    height: 35px;
+    min-width: 35px;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 28px;
+    z-index: 1;
+    user-select: none;
+    transform: scale(1);
+    animation: pulse 2s infinite;
+    font-size: 24px;
+}
+
+.button-up a{
+    text-decoration: none;
+    color: black;
+}
+.order 
+{
+
+    padding-bottom: 102px;
+    position: relative;
+}
+
+
+.order .container
+{
+    position: relative;
+}
+
+.container .common-title{
+    margin-top: -250px;
+    color: #3f3a38;
+}
+
+.container .common-title-love{
+    font-family: "Marck Script", cursive;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 0px;
+    color: #3f3a38;
+}
+
+.container .common-title-order{
+    font-family: "Marck Script", cursive;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 90px;
+    color: #3f3a38;
+}
+.order-block 
+{
+    margin-top: 15px;
+    background-color: rgba(130, 152, 242, 0.268);
+    backdrop-filter: blur(50px);
+    display: flex;
+}
+
+.order-form
+{
+    margin-left: 200px;
+    max-width: 387px;
+    padding: 40px 0 44px 0;
+    box-sizing: border-box;
+}
+
+.order-form-text
+{
+    font-family: 'Steppe-ExtraBold', sans-serif;
+    font-size: 18px;
+    line-height: 130%;
+    font-style: italic;
+    color: #3f3a38;
+    font-weight: 600;
+}
+
+.order-form-inputs 
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.order-form-inputs input
+{
+    border: 1px solid white;
+    border-radius: 60px;
+    margin-bottom: 16px;
+    padding: 24px 22px;
+    font-size: 18px;
+    width: 385px;
+    height: 68px;
+    background-color: transparent;
+    box-sizing: border-box;
+    outline: none;
+    color: white;   
+}
+
+::placeholder
+{
+    color: rgba(18, 15, 15, 0.43);
+}
+
+.order-form-inputs .violet-button1
+{
+    width: 387px;
+    height: 71px;
+    background-color: white;
+    border-radius: 60px;
+    box-sizing: border-box;
+    padding: 18px;
+    text-align: center;
+    font-size: 18px;
+    color: #5243F4;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    
+}
+
+.order-form-inputs .violet-button1:hover{
+    background-color: #eeeeee;
+}
+.order-block-image
+{
+    height: 500px;
+    margin-left: -70px;
+}
+
+.order-image
+{
+    height: 559px;
+    top: -58px;
+    position: relative;
+}
+
+.overflow-hidden {
+    overflow-x: hidden;
+  }
